@@ -1,27 +1,8 @@
 <template>
     <div>
-        <kx-header>
-            <div>
-                120急救
-            </div>
-        </kx-header>
         <div class="content">
-            <img src="../assets/img/logo.png" alt="">
+            <img @click="test" src="../assets/img/logo.png" alt="">
         </div>
-        <div class="footer">
-            <div class="nav max-width">
-                <router-link to="/common"  tag="div" class="nav-item">
-                    <i class="iconfont">&#xe669;</i>
-                    <p>急救常识</p>
-                </router-link>
-                <router-link to="/personal" tag="div" class="nav-item">
-                    <i class="iconfont">&#xe66e;</i>
-                    <p>个人中心</p>
-                </router-link>
-            </div>
-        </div>
-      
-    </div>
     </div>
 </template>
 
@@ -34,7 +15,9 @@
      * @date 2017/06/19
      * 
      */
-    import test from "../components/test.vue";
+    import Vue from "vue"
+
+  
     export default {
 
         name: 'app',
@@ -42,15 +25,14 @@
             return {
                
             }
-        }, components: {
-            "kx": test
         },
         methods: {
-         
+         test() {
+             this.toast({text:Math.random(),timer:5000})
+         }
         },
         mounted: function () {
-            
-
+        
 
         }
     }

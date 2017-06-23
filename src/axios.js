@@ -13,8 +13,11 @@ import router from './router.js'
 import Vue from 'vue';
 import axios from 'axios';
 import Qs from 'qs'
-import loading from "./components/base/loading"
-Vue.use(loading);
+// import loading from "./components/base/loading"
+// Vue.use(loading);
+//   loading.open({mask:"",text:"asdasd"});
+
+
 
 Vue.prototype.$http = axios.create({
     baseURL: BASE,

@@ -15,7 +15,8 @@ import App from './App'
 import "./components.js"
 import router from './router.js'
 import "./assets/css/iconfont.css"
-import './axios.js'
+import "./assets/css/zf.less"
+// import './axios.js'
 
 
 

@@ -1,17 +1,5 @@
 <template>
-    <div>
-        <kx-header>
-            <div slot="left" onclick="window.history.back()">
-                 <i class="iconfont">&#xe628;</i> 返回asd
-            </div>
-            <div>
-                急救常识
-            </div>
-            <router-link to="/personal" tag="div" slot="right">
-                <i class="iconfont">&#xe66e;</i>
-            </router-link>
-        </kx-header>
-        <div class="content">
+        <div class="common-wrap">
             <h2>急救常识</h2>
             <div class="common-box">
                 <div class="item">
@@ -47,13 +35,6 @@
                 </div>
             </div>
         </div>
-         <kx-text-list :items="[{text:'bbb',name:'lkx'},{text:'kkk',name:'lkx'}]">
-              <template slot="item" scope="props">
-                <li class="my-fancy-item">{{ props.name }}</li>
-            </template>
-         </kx-text-list>
-
-    </div>
     </div>
 </template>
 
@@ -66,7 +47,7 @@
      * @date 2017/06/19
      * 
      */
-    import test from "../components/test.vue";
+
     export default {
 
         name: 'app',
@@ -89,7 +70,8 @@
  @charset "utf-8";
  @import "../assets/css/library.less";
 
-    .content {
+    .common-wrap {
+        min-height:100%;
         h2 {
             font-weight:100;
             font-size:1.5rem;

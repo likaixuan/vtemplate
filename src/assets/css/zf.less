@@ -1,0 +1,75 @@
+
+@charset "utf-8";
+@import "./library.less";
+ div {
+     
+ }
+ @headerH:7*@gird;
+ @footerH:7*@gird;
+ //顶部
+ .zfHeader {
+     height: @headerH;
+     background:@Primary;
+     color:@white;
+     font-size:1.3rem;
+     position:relative;
+      .header-center {
+          position:absolute;
+          top:50%;
+          left:50%;
+          transform:translate(-50%,-50%);
+     }
+     .header-right {
+         position:absolute;
+         top:50%;
+         right:2*@gird;
+          transform:translateY(-50%);
+         
+     }
+     .header-left {
+        position:absolute;
+         top:50%;
+         left:2*@gird;
+        transform:translateY(-50%);
+         
+     }
+     i {
+        vertical-align:middle;
+     }
+}
+.zfcontent {
+    position:fixed;
+    top:@headerH;
+    bottom:@footerH;
+    width:100%;
+    overflow:hidden;
+    overflow-y:auto;
+    >div {
+        position:absolute;
+        min-height:100%;
+        width:100%;
+    }
+}
+//底部
+.zfFooter {
+    position:fixed;
+    bottom:0px;
+    height:@footerH;
+    width:100%;
+    background:@Primary;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    color:@white;
+    padding:8px;
+    >div {
+        text-align:center;
+        i {
+            font-size:1.3rem;
+        }
+        div {
+            font-size:1.2rem;
+            margin-top:4px;
+        }
+    }
+  }

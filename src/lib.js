@@ -1,5 +1,5 @@
 /**
- * @author 李凯旋
+ * @author likaixuan
  * @date 2017-04-10
  * 
  * 本地存储模块
@@ -68,7 +68,7 @@ export const ls = {
 	}
 };
 /**
- * @author 李凯旋
+ * @author likaixuan
  * @date 2017-05-29
  * 
  * 事件绑定
@@ -142,7 +142,14 @@ Date.prototype.Format = function (fmt) {
     return fmt;
 }
 
-
+/**
+ *
+ @author likaixuan
+ *
+ @date 2016-xxxx
+ * 
+ * 缓动动画
+ */
 export const animate = function (obj, json, fn) { // 给谁    json
 		clearInterval(obj.timer);
 		obj.timer = setInterval(function() {
@@ -208,11 +215,19 @@ export const animate = function (obj, json, fn) { // 给谁    json
 		}, 30)
 	}
 	
+/**
+ *
+ @author likaixuan
+ *
+ @date 2016-xxxx
+ * 
+ * 获取外联样式
+ */
 export const getStyle = function getStyle(obj, attr) {
-				if(obj.currentStyle) // ie 等
-				{
-					return obj.currentStyle[attr]; // 返回传递过来的某个属性
-				} else {
-					return window.getComputedStyle(obj, null)[attr]; // w3c 浏览器
-				}
-			}
+	if(!!obj.currentStyle) // ie 等
+		{
+			return obj.currentStyle[attr]; // 返回传递过来的某个属性
+		} else {
+			return window.getComputedStyle(obj, null)[attr]; // w3c 浏览器
+		}
+}

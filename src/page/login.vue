@@ -2,9 +2,6 @@
   
   <div class="yeye" id="yeye">
     <div class="border" @click="aaa">112233</div>
-    <kx-modal :show="isModal">
-
-    </kx-modal>
   </div>
 </template>
 

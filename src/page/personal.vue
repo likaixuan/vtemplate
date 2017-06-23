@@ -1,18 +1,6 @@
 <template>
-    <div>
-        <kx-header>
-             <div slot="left" onclick="window.history.back()">
-                 <i class="iconfont">&#xe628;</i> 返回
-            </div>
-            <div>
-                个人中心
-            </div>
-            <router-link to="/personal" tag="div" slot="right">
-              
-            </router-link>
-        </kx-header>
-        <div class="content">
-            <div class="user-box">
+    <div class="personal-wrap">
+         <div class="user-box">
                 <div class="user-header">
                     <img src="../assets/img/header.png" alt="">
                 </div>
@@ -30,14 +18,8 @@
                      <div  class="block">个人病情简历 </div>
                      <textarea name="" id=""></textarea>
                  </div>
-                
-                  
+               
             </div>
-            
-        </div>
-       
-
-    </div>
     </div>
 </template>
 
@@ -50,7 +32,7 @@
      * @date 2017/06/19
      * 
      */
-    import test from "../components/test.vue";
+
     export default {
         data() {
             return {
