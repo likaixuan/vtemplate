@@ -54,9 +54,8 @@
 html,body,#app{
   height:100%;
   width:100%;
-  background:@LightGray;
 }
- ::-webkit-scrollbar{width: 0;}
+ /*::-webkit-scrollbar{width: 0;}*/
  
 @media screen and (min-width:300px) and (max-width:375px) {
   html {

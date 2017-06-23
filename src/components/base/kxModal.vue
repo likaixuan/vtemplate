@@ -70,7 +70,6 @@
          transform:translateX(-50%);
          height:auto;
          z-index:1001;
-          
       }
   .fade-enter-active ,.fade-leave-active{
   transition:all .5s ease;

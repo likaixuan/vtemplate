@@ -1,5 +1,5 @@
 <template>
-  <div class="zfHeader">
+  <div class="zfHeader" :style="{position:fixed?'fixed':'relative'}">
       <div class="header-left">
           <slot name="left"></slot>
       </div>
@@ -32,12 +32,12 @@
       }
     },
     props:{
-       
+       fixed: Boolean
     },
     methods:{
     },
     mounted: function () {
-     
+     console.log(this.fixed,123123123);
       
     }
   }

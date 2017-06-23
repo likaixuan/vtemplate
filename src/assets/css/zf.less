@@ -1,18 +1,21 @@
 
 @charset "utf-8";
 @import "./library.less";
- div {
-     
- }
+
+//顶部高度
  @headerH:7*@gird;
+ //底部高度
  @footerH:7*@gird;
+
  //顶部
  .zfHeader {
      height: @headerH;
      background:@Primary;
      color:@white;
      font-size:1.3rem;
-     position:relative;
+     top:0px;
+     left:0px;
+     width:100%;
       .header-center {
           position:absolute;
           top:50%;
@@ -37,18 +40,30 @@
         vertical-align:middle;
      }
 }
-.zfcontent {
+//容器
+.zfContainer {
     position:fixed;
-    top:@headerH;
-    bottom:@footerH;
     width:100%;
-    overflow:hidden;
-    overflow-y:auto;
-    >div {
+    min-height:100%;
+    height:auto;
+}
+.zfContainerScroll {
+     overflow:hidden;
+     overflow-y:auto;
+      >div {
         position:absolute;
         min-height:100%;
         width:100%;
+        // background:@LightGray;
     }
+}
+.zfContainerTop {
+    top:@headerH !important;
+    bottom:0px;
+}
+.zfContainerBottom {
+    top:0px;
+    bottom:@footerH !important;;
 }
 //底部
 .zfFooter {

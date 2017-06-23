@@ -18,6 +18,24 @@
                      <div  class="block">个人病情简历 </div>
                      <textarea name="" id=""></textarea>
                  </div>
+                  <div class="list">
+                     <div>姓名&nbsp:<span>罗玉凤</span></div>
+                     <div>年龄&nbsp:<span>28岁</span></div>
+                     <div>电话&nbsp:<span>15227503302</span></div>
+                     <div>性别&nbsp:<span>不祥</span></div>
+                     <div class="block">地址&nbsp:<span>保定市北市区莲花乡池水沟</span></div>
+                     <div  class="block">个人病情简历 </div>
+                     <textarea name="" id=""></textarea>
+                 </div>
+                  <div class="list">
+                     <div>姓名&nbsp:<span>罗玉凤</span></div>
+                     <div>年龄&nbsp:<span>28岁</span></div>
+                     <div>电话&nbsp:<span>15227503302</span></div>
+                     <div>性别&nbsp:<span>不祥</span></div>
+                     <div class="block">地址&nbsp:<span>保定市北市区莲花乡池水沟</span></div>
+                     <div  class="block">个人病情简历 </div>
+                     <textarea name="" id=""></textarea>
+                 </div>
                
             </div>
     </div>
@@ -55,7 +73,6 @@
  @import "../assets/css/library.less";
 
   .user-box {
-     
       width:100%;
       padding:2*@gird;
       display:flex;

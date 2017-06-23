@@ -28,7 +28,9 @@
         },
         methods: {
          test() {
-             this.toast({text:Math.random(),timer:5000})
+             if ((typeof jsObj) != "undefined") {
+                jsObj.CallHelp();
+            }
          }
         },
         mounted: function () {

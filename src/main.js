@@ -1,10 +1,8 @@
-/*
- *----------------------------
- * 主入口
- *----------------------------
- * @author likaixuan
- * @date 2017/04/24
- * 
+/**
+ *
+主入口 2017/05/16
+ *
+ @author likaixuan
  */
 import Vue from 'vue'
 
@@ -16,10 +14,9 @@ import "./components.js"
 import router from './router.js'
 import "./assets/css/iconfont.css"
 import "./assets/css/zf.less"
-// import './axios.js'
 
-
-
+//拦截器配置
+import './axios.js'
 
 window.lib = lib;
 
@@ -27,11 +24,10 @@ window.lib = lib;
 import { host } from "./config"
 window.staticHost = host;
 
-
-
 //引入vuex
 //import store from './store/index.js'
 
+//关闭生产提示
 Vue.config.productionTip = false
 
 

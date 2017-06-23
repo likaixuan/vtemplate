@@ -1,29 +1,30 @@
 <template>
     <div>
-        <zf-header>
+        <zf-header fixed>
             <div>
-                120急救
+                vtemplate
             </div>
         </zf-header>
-        <div class="zfcontent">
-            <transition name="fade">
+        <zf-container top bottom scroll>
+             <transition name="fade">
                 <keep-alive>
                     <router-view></router-view>
                 </keep-alive>
             </transition>
-        </div>
+        </zf-container>
+      
         <zf-footer>
             <router-link tag="div" to="/" replace>
                 <i class="iconfont">&#xe604;</i>
-                <div>首页</div>
+                <div>list1</div>
             </router-link>
             <router-link tag="div" to="/common" replace>
                 <i class="iconfont">&#xe669;</i>
-                <div>急救</div>
+                <div>list2</div>
             </router-link>
             <router-link tag="div" to="/personal" replace>
                 <i class="iconfont">&#xe66e;</i>
-                <div>我的</div>
+                <div>list3</div>
             </router-link>
         </zf-footer>
     </div>
@@ -66,23 +67,7 @@
  @charset "utf-8";
  @import "../assets/css/library.less";
  
-.nav {
-  height:4.5rem;
-  color: white;
-  background: @Primary;
-  padding: 1rem;
-  width: 100%;
-  position: fixed;
-  bottom: 0px;
-  .nav-item {
-    width: 50%;
-    float: left;
-    text-align: center;
-  }
-  .nav-item:first-child {
-    border-right: 1px solid white;
-  }
-}
+
 .content img {
     width:80%;
     max-width:30rem;

@@ -214,7 +214,23 @@ export const animate = function (obj, json, fn) { // 给谁    json
 			}
 		}, 30)
 	}
-	
+/**
+ *
+ @author likaixuan
+ *
+ @date 2017-06-20
+ * 
+ * 防抖动 
+ */
+export const debounce = function(func,sleep){
+  let timer = null;
+  return function(){
+    clearTimeout(timeID);
+    timer = setTimeOut(func,sleep);
+  }
+}
+
+
 /**
  *
  @author likaixuan
