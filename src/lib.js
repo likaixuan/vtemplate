@@ -223,11 +223,12 @@ export const animate = function (obj, json, fn) { // 给谁    json
  * 防抖动 
  */
 export const debounce = function(func,sleep){
-  let timer = null;
+		
+  let timeID = null;
   return function(){
     clearTimeout(timeID);
-    timer = setTimeOut(func,sleep);
-  }
+    timeID = setTimeout(func,sleep);
+  };
 }
 
 
