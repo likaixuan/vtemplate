@@ -1,5 +1,5 @@
 <template>
-  <div class="zfContainer"  :class={zfContainerTop:top,zfContainerBottom:bottom,zfContainerScroll:scroll}>
+  <div class="zfContainer" :style="style"  :class={zfContainerTop:top,zfContainerBottom:bottom,zfContainerScroll:scroll}>
       <slot>
         
       </slot>
@@ -24,6 +24,10 @@
       distance: {
         type: Number,
         default: 0
+      },
+      style:{
+        type:Object,
+        default:{}
       }
     },
     methods: {
