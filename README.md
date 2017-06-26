@@ -92,5 +92,7 @@ npm run build
  */
 
 ```
+### swipe (已完成)
+> 引用的 [vue-swipe](https://github.com/ElemeFE/vue-swipe)
 ### lodding(已完成、文档待更)
 ### toast(已完成、文档待更)
