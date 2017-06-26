@@ -16,6 +16,7 @@
      top:0px;
      left:0px;
      width:100%;
+     z-index:@zIndex4;
       .header-center {
           position:absolute;
           top:50%;
@@ -42,10 +43,10 @@
 }
 //容器
 .zfContainer {
-    position:fixed;
+    position:absolute;
     width:100%;
-    min-height:100%;
     height:auto;
+    z-index:@zIndex1;
 }
 .zfContainerScroll {
      overflow:hidden;
@@ -54,7 +55,7 @@
         position:absolute;
         min-height:100%;
         width:100%;
-        // background:@LightGray;
+        background:@LightGray;
     }
 }
 .zfContainerTop {
@@ -77,6 +78,7 @@
     align-items:center;
     color:@white;
     padding:8px;
+     z-index:@zIndex4;
     >div {
         text-align:center;
         i {

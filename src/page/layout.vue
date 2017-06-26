@@ -1,11 +1,9 @@
 <template>
     <div>
         <zf-header fixed>
-            <div slot="left">asdasdasd</div>
             <div>
                 vtemplate
             </div>
-            <div slot="right">lkxasd</div>
         </zf-header>
         <zf-container top bottom scroll>
              <transition name="fade">

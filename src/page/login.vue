@@ -1,11 +1,11 @@
 <template>
   <div class="login">
     <zf-header fixed>
-      <div>
+      <div >
         vtemplate
       </div>
     </zf-header>
-    <zf-container @drop="test"  drop top scroll>
+    <zf-container top>
             <div class="ddd" >
               1,
               2,3,2512512
@@ -16,7 +16,6 @@
 
 <script>
 
-  import {debounce} from  "../lib.js"
   export default {
     data() {
       return {
@@ -24,12 +23,11 @@
       }
     },
     methods: {
-      test () {
-        alert("到底了");
-      }
+
     },
     mounted: function () {
-      
+
+
 
     }
   }
