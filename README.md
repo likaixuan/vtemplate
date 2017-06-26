@@ -41,8 +41,7 @@ npm run build
 ``` html
 /**
  *
- *
- * @example
+ * @example 
  *
  <zf-footer>
     <router-link tag="div" to="/" replace>
@@ -62,6 +61,36 @@ npm run build
  */
 
 ```
-### container(已完成、文档待更)
+### container(已完成)
+``` html
+/**
+ *
+ * @param {Bolean} scroll 是否开启内部滚动条
+ *
+ * @param {Bolean} top 是否距上方有一个header的top值
+ *
+ * @param {Bolean} bottom 是否距下方有一个footer的bottom值
+ *
+ * @param {Bolean} drop 是否开启下拉加载
+ *
+ * @param {Number} distance 下拉至底部的阀值
+ *
+ * @param {Object} styles 自定义样式
+ *
+ * @event drop 下拉到底时 触发此事件 
+ *
+ * @example
+ *
+  <zf-container top bottom scroll>
+         <transition name="fade">
+            <keep-alive>
+                <router-view></router-view>
+            </keep-alive>
+        </transition>
+   </zf-container>
+ *
+ */
+
+```
 ### lodding(已完成、文档待更)
 ### toast(已完成、文档待更)
