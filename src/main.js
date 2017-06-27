@@ -16,7 +16,7 @@ import "./assets/css/iconfont.css"
 import "./assets/css/zf.less"
 
 //拦截器配置
-import './axios.js'
+import './api/'
 
 window.lib = lib;
 

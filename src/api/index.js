@@ -5,11 +5,11 @@
  @author likaixuan
  */
 
-import {devUrl} from "./config"
+import {devUrl} from "../config"
 
 const BASE = devUrl;
 
-import router from './router.js'
+import router from '../router.js'
 import Vue from 'vue';
 import axios from 'axios';
 import Qs from 'qs'
