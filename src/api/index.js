@@ -27,6 +27,9 @@ Vue.prototype.$http = axios.create({
     }]
 });
 
+import loading from "../components/base/loading/"
+Vue.use(loading)
+loading.open({});
 // //拦截请求
 Vue.prototype.$http.interceptors.request.use(config => {
     loading.open();
