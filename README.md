@@ -101,7 +101,7 @@ npm run build
  *
  * @param {Bolean} [mask=true] 是否显示遮罩
  *
- * @param {Bolean} [text="加载中···"] 提示文字 不显示遮罩时默认隐藏显示文字
+ * @param {String} [text="加载中···"] 提示文字 不显示遮罩时默认隐藏显示文字
  *
  * @param {Number} [timer=100000] 无关闭lodding操作时 timer毫秒自动关闭
  *
