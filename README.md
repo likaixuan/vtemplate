@@ -9,15 +9,19 @@ npm install
 ```
 ## dev
 
-> 11.将config.js中的ISDEV重置为true
-> 2.将host重置为接口服务器地址
-> 3.npm run dev （http://localhost:4444）
+> 1.将config.js中的ISDEV重置为true <br/>
+
+> 2.将host重置为接口服务器地址 <br/>
+
+> 3.npm run dev （http://localhost:4444） 
 
 ## build
 
-> 1.将config.js中的ISDEV重置为false
-> 2.pc端：将host重置为""、移动端：将host重置为接口服务器地址
-> 3.npm run build
+> 1.将config.js中的ISDEV重置为false <br/>
+
+> 2.pc端：将host重置为""、移动端：将host重置为接口服务器地址 <br/>
+
+> 3.npm run build <br/>
 
 ## 引用静态资源
 
