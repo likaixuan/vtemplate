@@ -2,34 +2,30 @@
 
 > 基于vue-cli的移动端项目模板(配置、组件)
 
-## 安装
+## install
 
 ``` bash
 npm install
 ```
-## 运行
-```javascript
-1.将config.js中的ISDEV重置为true
-2.将host重置为接口服务器地址
-3.npm run dev （http://localhost:4444）
-```
-## 打包
+## dev
 
-```javascript
-1.将config.js中的ISDEV重置为false
-2.pc端：将host重置为""
-  移动端：将host重置为接口服务器地址
-3.npm run build
-```
+> 11.将config.js中的ISDEV重置为true
+> 2.将host重置为接口服务器地址
+> 3.npm run dev （http://localhost:4444）
 
-### 引用静态资源
+## build
+
+> 1.将config.js中的ISDEV重置为false
+> 2.pc端：将host重置为""、移动端：将host重置为接口服务器地址
+> 3.npm run build
+
+## 引用静态资源
+
 ``` javascript
 <img :src="host+图片相对地址"></img>
 
 ```
-
-
-## 组件用法
+## 组件文档
 
 ### header(已完成)
 ``` javascript
