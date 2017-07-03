@@ -1,5 +1,5 @@
 
-import axios from 'axios';
+import ajax from './';
 
 
 /**
@@ -14,5 +14,5 @@ import axios from 'axios';
  * 
  */
 export const test = params => {
-    return axios.post("http://www/xxx/com", params);
+    returnajax.post("xxxxxxx", params);
 };

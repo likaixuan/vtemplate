@@ -14,10 +14,14 @@ import Vue from 'vue';
 import axios from 'axios';
 import Qs from 'qs'
 
+
+import loading from "../components/base/loading/"
+Vue.use(loading)
 //静态资源服务器
 Vue.prototype.host = host;
 
-Vue.prototype.$http = axios.create({
+
+let ajax = axios.create({
     baseURL: BASE,
     timeout: 100000,
     transformRequest: [function (data) {
@@ -28,11 +32,10 @@ Vue.prototype.$http = axios.create({
     }]
 });
 
-import loading from "../components/base/loading/"
-Vue.use(loading)
-loading.open({mask:111,text:"gasgasg"});
+
+
 // //拦截请求
-Vue.prototype.$http.interceptors.request.use(config => {
+ajax.interceptors.request.use(config => {
     loading.open();
     return config;
 }, error => {
@@ -41,10 +44,12 @@ Vue.prototype.$http.interceptors.request.use(config => {
 });
 
 //拦截响应
-Vue.prototype.$http.interceptors.response.use(response => {
+ajax.interceptors.response.use(response => {
     loading.close();
     return response;
 }, error => {
     loading.close();
     return Promise.reject(error);
 });
+
+export default ajax
