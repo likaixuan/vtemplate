@@ -18,7 +18,7 @@ npm run build
 ## 组件用法
 
 ### header(已完成)
-``` html
+``` javascript
 /**
  * 
  * @param {Boolean} fixed - 是否固定在顶部
@@ -38,7 +38,7 @@ npm run build
 ```
 
 ### footer(已完成)
-``` html
+``` javascript
 /**
  *
  * @example 
@@ -62,7 +62,7 @@ npm run build
 
 ```
 ### container(已完成)
-``` html
+``` javascript
 /**
  *
  * @param {Bolean} scroll 是否开启内部滚动条
@@ -94,5 +94,54 @@ npm run build
 ```
 ### swipe (已完成)
 > 引用的 [vue-swipe](https://github.com/ElemeFE/vue-swipe)
-### lodding(已完成、文档待更)
+
+### lodding(已完成)
+``` javascript
+/**
+ *
+ * @param {Bolean} [mask=true] 是否显示遮罩
+ *
+ * @param {String} [text="加载中···"] 提示文字 不显示遮罩时默认隐藏显示文字
+ *
+ * @param {Number} [timer=100000] 无关闭lodding操作时 timer毫秒自动关闭
+ *
+ *
+ * @event drop 下拉到底时 触发此事件 
+ *
+ * @example
+ *
+  import loading from "xxx/loading/"
+  Vue.use(loading)
+  //默认方式
+  loading.open();
+   //可传参
+  loading.open({text:"加载呢"，timer:3000});
+ *
+ */
+
+```
 ### toast(已完成、文档待更)
+``` javascript
+/**
+ *
+ * @param {String} location ["top","center","bottom"] 显示位置
+ *
+ * @param {String} text 提示文字 
+ *
+ * @param {Number} [timer=3000] timer 毫秒后关闭
+ *
+ *
+ * @event drop 下拉到底时 触发此事件 
+ *
+ * @example
+ *
+  import toast from "xxx/toast/"
+  Vue.use(toast)
+  //组件自身调用
+  toast.toast({text:"你好啊"});
+   //Vue实例调用
+  this.toast({text:"你好啊",timer:4000});
+ *
+ */
+
+```
