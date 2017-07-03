@@ -5,7 +5,7 @@
  @author likaixuan
  */
 
-import {devUrl} from "../config"
+import {devUrl,host} from "../config"
 
 const BASE = devUrl;
 
@@ -14,7 +14,8 @@ import Vue from 'vue';
 import axios from 'axios';
 import Qs from 'qs'
 
-
+//静态资源服务器
+Vue.prototype.host = host;
 
 Vue.prototype.$http = axios.create({
     baseURL: BASE,
@@ -29,7 +30,7 @@ Vue.prototype.$http = axios.create({
 
 import loading from "../components/base/loading/"
 Vue.use(loading)
-loading.open({});
+loading.open({mask:111,text:"gasgasg"});
 // //拦截请求
 Vue.prototype.$http.interceptors.request.use(config => {
     loading.open();

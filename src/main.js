@@ -20,9 +20,6 @@ import './api/'
 
 window.lib = lib;
 
-//静态资源服务器
-import { host } from "./config"
-window.staticHost = host;
 
 //引入vuex
 //import store from './store/index.js'
