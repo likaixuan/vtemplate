@@ -31,7 +31,7 @@ npm install
 ```
 ## 组件文档
 
-### header(已完成)
+### header
 ``` javascript
 /**
  * 
@@ -51,7 +51,7 @@ npm install
 
 ```
 
-### footer(已完成)
+### footer
 ``` javascript
 /**
  *
@@ -75,7 +75,26 @@ npm install
  */
 
 ```
-### container(已完成)
+### cell
+``` javascript
+/**
+ * @param {String} title 标题
+ *
+ * @param {String} label 次要文本
+ *
+ * @param {String} to 路由跳转
+ * @param {slot} 默认分发到右侧 一般为图标
+ * @example 
+ *
+  <zf-cell title="十三亿人都震惊了" label="北京欢迎你" to="/">
+      <i class="iconfont"> &#xe642; </i>
+  </zf-cell>
+ *
+ */
+
+```
+
+### container
 ``` javascript
 /**
  *
@@ -106,10 +125,10 @@ npm install
  */
 
 ```
-### swipe (已完成)
+### swipe (非原创)
 > 引用的 [vue-swipe](https://github.com/ElemeFE/vue-swipe)
 
-### lodding(已完成)
+### lodding
 ``` javascript
 /**
  *
@@ -134,7 +153,7 @@ npm install
  */
 
 ```
-### toast(已完成、文档待更)
+### toast
 ``` javascript
 /**
  *
