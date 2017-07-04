@@ -76,9 +76,9 @@ html,body,#app{
   }
 }
 
-@media screen and (min-width:640px) and (max-width:719px) {
+@media screen and (min-width:640px) {
   html {
-    font-size: 20px
+    font-size: 16px
   }
 }
 

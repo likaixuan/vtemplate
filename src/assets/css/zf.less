@@ -89,3 +89,33 @@
     }
   }
 
+  /*列表*/
+ .zfCell{
+       display:flex;
+       justify-content:space-between;
+       align-items:center;
+       min-height:6*@gird;
+       padding:1*@gird;
+       background:white;
+       border-bottom:1px solid rgba(0,0, 0, 0.1);
+       .icon {
+            color:rgba(0,0, 0, 0.48);
+       }
+       .content {
+            max-width:85%;
+       }
+       .title {
+            font-size:1.2rem;
+             color:rgba(0,0, 0, 0.87);
+             overflow: hidden;white-space: nowrap;text-overflow: ellipsis;
+       }
+       .secondary {
+            color:rgba(0,0, 0, 0.48);
+            margin-top:8px;
+            overflow: hidden;white-space: nowrap;text-overflow: ellipsis;
+            min-width:0px;
+            height:1.5em;
+            font-size:1.1rem;
+           
+       }
+   }
