@@ -10,16 +10,16 @@
 @import "./library.scss";
 
 //顶部高度
- $headerH:rem(60);
+ $headerH:rem(88);
  //底部高度
- $footerH:rem(60);
+ $footerH:rem(88);
 
  //顶部
  .zfHeader {
      height: $headerH;
      background:$Primary;
      color:$white;
-     font-size:rem(18);
+     font-size:rem(24);
      top:0px;
      left:0px;
      width:100%;
@@ -90,10 +90,10 @@
         align-content:space-around;
         text-align:center;
         i {
-            font-size:rem(15);
+            font-size:rem(24);
         }
         div {
-          font-size:rem(14);
+          font-size:rem(18);
           width:100%;
         }
     }
@@ -104,7 +104,7 @@
        display:flex;
        justify-content:space-between;
        align-items:center;
-       min-height:rem(50);
+       min-height:rem(80);
        background:white;
        border-bottom:1px solid rgba(0,0, 0, 0.1);
        padding:rem(8);
@@ -112,14 +112,14 @@
             display:flex;
             align-items:center;
             i {
-                  font-size:rem(14);
+                  font-size:rem(24);
             }
        }
        .content {
             max-width:85%;
        }
        .title {
-            font-size:rem(15);
+            font-size:rem(18);
              color:rgba(0,0, 0, 0.87);
              overflow: hidden;white-space: nowrap;text-overflow: ellipsis;
        }
@@ -128,7 +128,7 @@
             margin-top:1*$gird;
             overflow: hidden;white-space: nowrap;text-overflow: ellipsis;
             min-width:0px;
-            font-size:rem(12);
+            font-size:rem(14);
            
        }
    }
