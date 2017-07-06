@@ -37,12 +37,6 @@
     }
 </script>
 
-<style lang="less" scoped>
-
- @charset "utf-8";
- @import "../assets/css/library.less";
-    .common-wrap {
-        background:white;
-    }
+<style lang="scss" scoped>
    
 </style>

@@ -1,22 +1,29 @@
-
+/*
+ *----------------------------
+ * 公共scss库
+ *----------------------------
+ * $author likaixuan
+ * $date 2017/06/24
+ * 
+ */
 @charset "utf-8";
-@import "./library.less";
+@import "./library.scss";
 
 //顶部高度
- @headerH:7*@gird;
+ $headerH:rem(60);
  //底部高度
- @footerH:7*@gird;
+ $footerH:rem(60);
 
  //顶部
  .zfHeader {
-     height: @headerH;
-     background:@Primary;
-     color:@white;
-     font-size:1.3rem;
+     height: $headerH;
+     background:$Primary;
+     color:$white;
+     font-size:rem(18);
      top:0px;
      left:0px;
      width:100%;
-     z-index:@zIndex4;
+     z-index:$zIndex4;
       .header-center {
           position:absolute;
           top:50%;
@@ -26,14 +33,14 @@
      .header-right {
          position:absolute;
          top:50%;
-         right:2*@gird;
-          transform:translateY(-50%);
+         right:2*$gird;
+         transform:translateY(-50%);
          
      }
      .header-left {
         position:absolute;
          top:50%;
-         left:2*@gird;
+         left:2*$gird;
         transform:translateY(-50%);
          
      }
@@ -46,7 +53,7 @@
     position:absolute;
     width:100%;
     height:auto;
-    z-index:@zIndex1;
+    z-index:$zIndex1;
 }
 .zfContainerScroll {
      overflow:hidden;
@@ -58,33 +65,36 @@
     }
 }
 .zfContainerTop {
-    top:@headerH !important;
+    top:$headerH !important;
 }
 .zfContainerBottom {
     top:0px;
-    bottom:@footerH !important;;
+    bottom:$footerH !important;;
 }
 //底部
 .zfFooter {
     position:fixed;
     bottom:0px;
-    height:@footerH;
+    height:$footerH;
     width:100%;
-    background:@Primary;
+    background:$Primary;
     display:flex;
     justify-content:space-around;
-    align-items:center;
-    color:@white;
-    padding:8px;
-     z-index:@zIndex4;
+    color:$white;
+    z-index:$zIndex4;
+    padding:1*$gird;
     >div {
+        display:flex;
+        justify-content:space-around;
+        flex-wrap:wrap;
+        align-content:space-around;
         text-align:center;
         i {
-            font-size:1.3rem;
+            font-size:rem(15);
         }
         div {
-            font-size:1.2rem;
-            margin-top:4px;
+          font-size:rem(14);
+          width:100%;
         }
     }
   }
@@ -94,28 +104,31 @@
        display:flex;
        justify-content:space-between;
        align-items:center;
-       min-height:6*@gird;
-       padding:1*@gird;
+       min-height:rem(50);
        background:white;
        border-bottom:1px solid rgba(0,0, 0, 0.1);
+       padding:rem(8);
        .icon {
-            color:rgba(0,0, 0, 0.48);
+            display:flex;
+            align-items:center;
+            i {
+                  font-size:rem(14);
+            }
        }
        .content {
             max-width:85%;
        }
        .title {
-            font-size:1.2rem;
+            font-size:rem(15);
              color:rgba(0,0, 0, 0.87);
              overflow: hidden;white-space: nowrap;text-overflow: ellipsis;
        }
        .secondary {
             color:rgba(0,0, 0, 0.48);
-            margin-top:8px;
+            margin-top:1*$gird;
             overflow: hidden;white-space: nowrap;text-overflow: ellipsis;
             min-width:0px;
-            height:1.5em;
-            font-size:1.1rem;
+            font-size:rem(12);
            
        }
    }

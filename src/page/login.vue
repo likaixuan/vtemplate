@@ -64,8 +64,3 @@
     }
   }
 </script>
-<style lang="less" scoped> 
- @import "../assets/css/library.less";
-
- 
-</style>

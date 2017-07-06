@@ -13,8 +13,8 @@ import App from './App'
 import "./components.js"
 import router from './router.js'
 import "./assets/css/iconfont.css"
-import "./assets/css/zf.less"
-
+import "./assets/css/zf.scss"
+import "./assets/css/reset.scss"
 //拦截器配置
 import './api/'
 

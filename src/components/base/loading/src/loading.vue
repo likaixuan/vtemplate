@@ -29,7 +29,7 @@
         }
     };
 </script>
-<style lang="less" scoped>
+<style lang="scss" scoped>
     .mask {
         position:fixed;
         top:0px;

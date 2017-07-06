@@ -6,13 +6,13 @@
             </div>
         </zf-header>
         <zf-container top bottom scroll>
-             <transition name="fade">
+            <transition name="fade">
                 <keep-alive>
                     <router-view></router-view>
                 </keep-alive>
             </transition>
         </zf-container>
-      
+
         <zf-footer>
             <router-link tag="div" to="/" replace>
                 <i class="iconfont">&#xe604;</i>
@@ -20,7 +20,7 @@
             </router-link>
             <router-link tag="div" to="/common" replace>
                 <i class="iconfont">&#xe669;</i>
-                <div>list2</div>
+                <div>cell</div>
             </router-link>
             <router-link tag="div" to="/personal" replace>
                 <i class="iconfont">&#xe66e;</i>
@@ -62,10 +62,10 @@
     }
 </script>
 
-<style lang="less" scoped>
+<style lang="scss" scoped>
 
  @charset "utf-8";
- @import "../assets/css/library.less";
+ @import "../assets/css/library.scss";
  
 
 .content img {
