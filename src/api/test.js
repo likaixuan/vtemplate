@@ -14,5 +14,5 @@ import ajax from './';
  * 
  */
 export const test = params => {
-    returnajax.post("xxxxxxx", params);
+    return ajax.post("xxxxxxx", params);
 };
