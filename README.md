@@ -23,6 +23,19 @@ npm install
 
 > 3.npm run build <br/>
 
+
+## 布局
+> 1.采用rem  <br/>
+> 2.引入 library.scss   <br/>
+> 3.默认使用640w设计图（修改library.scss中的rem函数即可更改尺寸）  <br/>
+> 4.案例  <br/>
+```
+@import "xxx/library.scss "
+button {
+    width:rem(80);//80为设计图上button像素值，调用library中的rem方法会自动转换为rem
+}
+```
+
 ## 引用静态资源
 
 ``` javascript
