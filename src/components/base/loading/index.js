@@ -18,28 +18,18 @@ zfLoading.install = function (Vue) {
   let timeId;
 
   zfLoading.open = (options) => {
-    if (!options || !options.mask || !options.text ||!options.timer) {
-      if (!options) {
-        options = {};
-      }
-      if (!options.mask && typeof (options.mask) === "undefined") {
+    options = options || {};
+    options.mask = !!options.mask;
+    options.text = options.text || "加载中···";
+    options.timer = options.timer || 10000
 
-        options.mask = true;
-      }
-      if (!options.text && options.text !== "") {
-        options.text = "加载中···"
-      }
-      if(!options.timer) {
-        options.timer = 10000;
-      }
-    }
     obj.text = options.text;
     obj.isMask = options.mask;
     obj.isloading = true;
-   
-    timeId = setTimeout(()=>{
-       obj.isloading = false;
-    },options.timer)
+
+    timeId = setTimeout(() => {
+      obj.isloading = false;
+    }, options.timer)
 
   }
   zfLoading.close = () => {
