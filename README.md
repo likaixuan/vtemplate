@@ -184,7 +184,7 @@ button {
   import toast from "xxx/toast/"
   Vue.use(toast)
   //组件自身调用
-  toast.toast({text:"你好啊"});
+  toast.open({text:"你好啊"});
    //Vue实例调用
   this.toast({text:"你好啊",timer:4000});
  *
