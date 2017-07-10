@@ -44,6 +44,8 @@ button {
 ```
 ## 组件文档
 
+> 建议注册时 在components.js 中去全局注册、统一管理
+
 ### header
 ``` javascript
 /**
