@@ -14,17 +14,18 @@
  //底部高度
  $footerH:rem(88);
 
+  
  //顶部
  .zfHeader {
+     @extend .horizontal-center;
      height: $headerH;
      background:$Primary;
      color:$white;
      font-size:rem(24);
      top:0px;
-     left:0px;
      width:100%;
      z-index:$zIndex4;
-      .header-center {
+     .header-center {
           position:absolute;
           top:50%;
           left:50%;
@@ -35,7 +36,6 @@
          top:50%;
          right:2*$gird;
          transform:translateY(-50%);
-         
      }
      .header-left {
         position:absolute;
@@ -50,6 +50,7 @@
 }
 //容器
 .zfContainer {
+     @extend .horizontal-center;
     position:absolute;
     width:100%;
     height:auto;
@@ -73,6 +74,7 @@
 }
 //底部
 .zfFooter {
+     @extend .horizontal-center;
     position:fixed;
     bottom:0px;
     height:$footerH;

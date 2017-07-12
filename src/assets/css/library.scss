@@ -8,10 +8,15 @@
  */
 
 @charset "utf-8";
-
+$max-width:10rem;
 .overflow-ellipsis{
     white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
 }
+.horizontal-center {
+    left:50%;
+    transform:translateX(-50%);
+    max-width:$max-width;
+ }
 
 @function rem($px) {
     $rem: $px/640*10;

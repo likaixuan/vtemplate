@@ -19,8 +19,14 @@
   word-break:break-all;
 }
 html,body,#app{
+  width:$max-width;
   height:100%;
-  width:100%;
-  background:$LightGray;
+}
+#app {
+   position:absolute;
+   border:1px solid $LightGray;
+   @extend .horizontal-center;
+   background:$LightGray;
+
 }
  ::-webkit-scrollbar{width: 0;}
