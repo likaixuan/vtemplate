@@ -1,5 +1,5 @@
 <template>
-  <div class="zfHeader" :style="{position:fixed?'fixed':'relative'}">
+  <div class="zfHeader" :style="{position:fixed?'fixed':'absolute'}">
       <div class="header-left">
           <slot name="left"></slot>
       </div>
