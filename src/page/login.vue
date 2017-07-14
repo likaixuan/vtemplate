@@ -6,21 +6,21 @@
       </div>
     </zf-header>
     <zf-container top>
-
-      <zf-swipe class="my-swipe" :speed="400" :auto="5000">
+        <div @click="jump">返回首页</div>
+      <!--<zf-swipe class="my-swipe" :speed="400" :auto="5000">
         <zf-swipe-item class="slide1">
           <img src="../assets/img/swipe1.jpg" alt="">
         </zf-swipe-item>
         <zf-swipe-item class="slide2">
           <img src="../assets/img/swipe2.jpg" alt="">
         </zf-swipe-item>
-
-
-      </zf-swipe>
+      </zf-swipe>-->
     </zf-container>
+  
   </div>
 </template>
 <style>
+
   .my-swipe {
   height:150px;
   width:100%;
@@ -55,7 +55,9 @@
       }
     },
     methods: {
-
+      jump () {
+        this.$router.push('/')
+      }
     },
     mounted: function () {
 

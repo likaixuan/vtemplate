@@ -2,7 +2,12 @@
     <div>
         <zf-header fixed>
             <div>
-                vtemplate
+                <template v-if="$route.path==='/'">
+                    vtemplate
+                </template>
+                 <template v-else-if="$route.path==='/demo'">
+                    demo
+                </template>
             </div>
         </zf-header>
         <zf-container top bottom scroll>
@@ -16,15 +21,15 @@
         <zf-footer>
             <router-link tag="div" to="/" replace>
                 <i class="iconfont">&#xe604;</i>
-                <div>list1</div>
+                <div>index</div>
             </router-link>
-            <router-link tag="div" to="/common" replace>
-                <i class="iconfont">&#xe669;</i>
-                <div>cell</div>
+            <router-link tag="div" to="/demo" replace>
+                <i class="iconfont">&#xe6e4;</i>
+                <div>demo</div>
             </router-link>
             <router-link tag="div" to="/personal" replace>
-                <i class="iconfont">&#xe66e;</i>
-                <div>list3</div>
+                <i class="iconfont">&#xe6a4;</i>
+                <div>关于</div>
             </router-link>
         </zf-footer>
     </div>

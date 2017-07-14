@@ -15,26 +15,27 @@ import layout from "./page/layout.vue"
 import index from "./page/index.vue"
 import common from "./page/common.vue"
 import personal from "./page/personal.vue"
-
+import demo from "./page/demo.vue"
 import login from "./page/login.vue"
 
 Vue.use(Router)
 
 export default new Router({
-  routes: [ 
-      {
-          path: '/',
-          component: layout,
-          children: [
-                { path: '/', component:index},
-                { path: '/common', component: common }, 
-                {path:'/personal',component:personal}
-          ]
-      },    
-       {
-          path: '/login',
-          component:login,
-      },    
+    routes: [
+        {
+            path: '/',
+            component: layout,
+            children: [
+                { path: '/', component: index },
+                { path: '/common', component: common },
+                { path: '/personal', component: personal },
+                { path: '/demo', component: demo },
+            ]
+        },
+        {
+            path: '/login',
+            component: login,
+        },
     ]
 })
 
