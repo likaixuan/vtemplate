@@ -13,9 +13,9 @@ $max-width:10rem;
     white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
 }
 .horizontal-center {
-    left:50%;
-    transform:translateX(-50%);
     max-width:$max-width;
+    left:50%;
+    transform: translate3d(-50%, 0, 0);
  }
 
 @function rem($px) {

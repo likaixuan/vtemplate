@@ -86,6 +86,7 @@
     padding:1*$gird;
     >div {
         display:flex;
+        flex:1;
         justify-content:space-around;
         flex-wrap:wrap;
         align-content:space-around;

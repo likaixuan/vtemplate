@@ -5,7 +5,7 @@
                 <template v-if="$route.path==='/'">
                     vtemplate
                 </template>
-                 <template v-else-if="$route.path==='/demo'">
+                <template v-else-if="$route.path==='/demo'">
                     demo
                 </template>
             </div>
@@ -17,7 +17,7 @@
                 </keep-alive>
             </transition>
         </zf-container>
-
+    
         <zf-footer>
             <router-link tag="div" to="/" replace>
                 <i class="iconfont">&#xe604;</i>
@@ -36,60 +36,55 @@
 </template>
 
 <script>
-    /*
-     *----------------------------
-     * 主布局(layout)
-     *----------------------------
-     * @author likaixuan
-     * @date 2017/06/19
-     * 
-     */
-    import Vue from "vue"
+/*
+ *----------------------------
+ * 主布局(layout)
+ *----------------------------
+ * @author likaixuan
+ * @date 2017/06/19
+ * 
+ */
+import Vue from "vue"
 
 
-    export default {
+export default {
 
-        name: 'app',
-        data() {
-            return {
-
-            }
-        },
-        methods: {
-            test() {
-                this.toast({ text: Math.random(), timer: 5000 })
-            }
-        },
-        mounted: function () {
-
+    name: 'app',
+    data() {
+        return {
 
         }
+    },
+    methods: {
+        test() {
+            this.toast({ text: Math.random(), timer: 5000 })
+        }
+    },
+    mounted: function () {
+
+
     }
+}
 </script>
 
 <style lang="scss" scoped>
+@charset "utf-8";
+@import "../assets/css/library.scss";
 
- @charset "utf-8";
- @import "../assets/css/library.scss";
- 
+.fade-enter-active,
+.fade-leave-active {
+    transition: all .5s;
+    transform: translate3D(0px, 0px, 0);
+}
 
-.content img {
-    width:80%;
-    max-width:30rem;
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-60%);
-}
-.fade-enter-active, .fade-leave-active {
-  transition: all .5s
-}
-.fade-enter  /* .fade-leave-active in <2.1.8 */ {
- 
-  transform:translateX(-100%);
+.fade-enter
+/* .fade-leave-active in <2.1.8 */
 
+{
+    transform: translate3D(-100%, 0px, 0);
 }
+
 .fade-leave-to {
- transform:translateX(100%);
+    transform: translate3D(100%, 0px, 0);
 }
 </style>
