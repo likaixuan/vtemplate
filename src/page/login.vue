@@ -5,7 +5,7 @@
         vtemplate
       </div>
     </zf-header>
-    <zf-container top>
+    <zf-container top bottom>
         <div @click="jump">返回首页</div>
       <!--<zf-swipe class="my-swipe" :speed="400" :auto="5000">
         <zf-swipe-item class="slide1">

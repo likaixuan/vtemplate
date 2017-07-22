@@ -1,5 +1,5 @@
 <template>
-  <div class="zfContainer" :style="styles"  :class={zfContainerTop:top,zfContainerBottom:bottom,zfContainerScroll:scroll}>
+  <div class="zfContainer" :style="styles"  :class={zfContainerOnlyTop:top&&scroll&&!bottom,zfContainerTop:top,zfContainerBottom:bottom,zfContainerScroll:scroll}>
       <slot>
         
       </slot>

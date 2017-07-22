@@ -10,15 +10,15 @@
 @import "./library.scss";
 
 //顶部高度
- $headerH:rem(88);
+ $headerH:88;
  //底部高度
- $footerH:rem(88);
+ $footerH:88;
 
   
  //顶部
  .zfHeader {
      @extend .horizontal-center;
-     height: $headerH;
+     height: rem($headerH);
      background:$Primary;
      color:$white;
      font-size:rem(24);
@@ -65,18 +65,21 @@
     }
 }
 .zfContainerTop {
-    top:$headerH !important;
+    top:rem($headerH) !important;
+}
+.zfContainerOnlyTop {
+    bottom:0;
 }
 .zfContainerBottom {
-    top:0px;
-    bottom:$footerH !important;;
+    top:0;
+    bottom:rem($footerH) !important;;
 }
 //底部
 .zfFooter {
      @extend .horizontal-center;
     position:fixed;
-    bottom:0px;
-    height:$footerH;
+    bottom:0;
+    height:rem($footerH);
     width:100%;
     background:$Primary;
     display:flex;
