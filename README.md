@@ -179,8 +179,6 @@ button {
  * @param {Number} [timer=3000] timer 毫秒后关闭
  *
  *
- * @event drop 下拉到底时 触发此事件 
- *
  * @example
  *
   import toast from "xxx/toast/"
