@@ -1,5 +1,5 @@
 //开发环境为true、生产为false
-let ISDEV = false;
+let ISDEV = true;
 
 //目标服务器路径
 let host = 'http://192.168.1.6:88';
